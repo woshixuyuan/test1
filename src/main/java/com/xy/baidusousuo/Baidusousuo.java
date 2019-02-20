@@ -13,7 +13,7 @@ public class Baidusousuo {
         webDriver.manage().window().maximize();
         webDriver.manage().deleteAllCookies();
         // 与浏览器同步非常重要，必须等待浏览器加载完毕
-        webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         //打开目标地址
         webDriver.get("https://www.baidu.com");
         Thread.sleep(1000);
